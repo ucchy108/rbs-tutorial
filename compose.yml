@@ -1,6 +1,6 @@
 services:
   db:
-    image: postgres:16.3
+    image: postgres:latest
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
@@ -15,9 +15,9 @@ services:
       - 3000:3000
     volumes:
       - .:/app
+    tty: true
     depends_on:
       - db
-    command: ['sleep', 'infinity']
 
 volumes:
   db-data:
