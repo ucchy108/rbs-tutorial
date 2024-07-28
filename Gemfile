@@ -18,6 +18,7 @@ group :development, :test do
   gem 'rubocop-shopify'
   gem 'rubocop-thread_safety'
   gem 'ruby-lsp'
+  gem 'ruby-lsp-rails'
 end
 
 group :development do

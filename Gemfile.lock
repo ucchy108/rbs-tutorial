@@ -214,6 +214,8 @@ GEM
       prism (>= 0.29.0, < 0.31)
       rbs (>= 3, < 4)
       sorbet-runtime (>= 0.5.10782)
+    ruby-lsp-rails (0.3.11)
+      ruby-lsp (>= 0.17.2, < 0.18.0)
     ruby-progressbar (1.13.0)
     sorbet-runtime (0.5.11491)
     stringio (3.1.1)
@@ -245,6 +247,7 @@ DEPENDENCIES
   rubocop-shopify
   rubocop-thread_safety
   ruby-lsp
+  ruby-lsp-rails
   tzinfo-data
 
 RUBY VERSION

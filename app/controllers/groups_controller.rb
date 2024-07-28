@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class GroupsController < ApplicationController
-  before_action :set_group, only: %i[ show update destroy ]
+  before_action :set_group, only: %i[show update destroy]
 
   # GET /groups
   def index
@@ -39,13 +41,14 @@ class GroupsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_group
-      @group = Group.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def group_params
-      params.require(:group).permit(:name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_group
+    @group = Group.find(params[:id])
+  end
+
+  # NOTE: Only allow a list of trusted parameters through.
+  def group_params
+    params.require(:group).permit(:name)
+  end
 end
